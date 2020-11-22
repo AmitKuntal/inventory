@@ -1,4 +1,5 @@
 export const login_user = (payload)=>({'type':'LOGIN', payload:payload})
 export const addProduct = (payload)=>({'type':'ADD_PRODUCT', payload:payload})
-export const searchProduct = (payload)=>({'type':'SEARCH_PRODUCT', payload:payload})
+export const filterBYPrice = ()=>({'type':'FILTER_BY_PRICE'})
+export const filterBYQty = ()=>({'type':'FILTER_BY_Qty'})
 export const logout = ()=>({'type':'LOGOUT'})

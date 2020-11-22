@@ -1,6 +1,5 @@
 import React from 'react'
 export const AddProduct = (props) => {
-    console.log("props", props)
     const showHideClassName = props.show ? "modal display-block" : "modal display-none";
 
     const [product, setProduct] = React.useState({})

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Inventory from './inventory';
-import {addProduct, searchProduct, logout, login_user} from './actions/index'
+import {addProduct, filterBYPrice, logout, login_user, filterBYQty} from './actions/index'
 
 const container = connect(
   state=>
@@ -10,7 +10,8 @@ const container = connect(
   , {
         login_user,
         addProduct,
-        searchProduct,
+        filterBYPrice,
+        filterBYQty,
         logout
     }
 )(Inventory);
