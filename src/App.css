@@ -19,8 +19,8 @@
 .modal-main {
   position:fixed;
   background: white;
-  width: 40vw;
-  height: 40vh;
+  width: fit-content;
+  height: fit-content;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
@@ -82,6 +82,7 @@
   font-size: medium;
   outline: none;
   border: none;
+  margin-bottom: 2vw;
 }
 
 .red{
@@ -90,7 +91,7 @@
 }
 
 .header{
-  width: 98vw;
+  width: 96.8vw;
   height: fit-content;
   padding: 1vw;
   background-color: black;
@@ -104,6 +105,52 @@
   margin-right: 2vw;
   font-size: medium;
   font-weight: 900;
+}
+
+.control_box{
+  margin-top: 2vw;
+  border:solid black;
+  border-width: 1px;
+  padding: 3vw;
+  border-radius: 8px;
+  display: flex;
+  flex-flow:column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.fit{
+  width: fit-content;
+}
+
+.add_product{
+  display: flex;
+  flex-flow: column;
+  padding: 2vw;
+}
+
+.products{
+  margin-top: 2vw;
+  border:solid black;
+  border-width: 1px;
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  padding: 2vw;
+  margin-bottom: 2vw;
+}
+
+.card{
+  width: 8vw;
+  border:solid black;
+  border-width: 1px;
+  border-radius: 8px;
+  margin: 1vw;
+  padding: 1vw;
+  height: auto;
+  display: flex;
+  flex-flow: column;
 }
 
 @media (prefers-reduced-motion: no-preference) {

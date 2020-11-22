@@ -22,11 +22,11 @@ export default function Dashboard(props){
             <Header name={props.user.name} logout={props.logout} />
             <div className="container">
                 <div className="control_box">
-                    <button onClick={(e)=>setShow(true)}>Add Product</button>
-                    <input type="text" onChange={(e)=>handleSearch(e.target.value)} placeholder="Search Product"/>
-                    <AddProduct {...props}  show = {show} handleClose={handleClose} />
-                    {props.products && search.length === 0 ? <Products products={props.products} />:<Search products={props.products} query={search} />}
+                    <button className="button fit" onClick={(e)=>setShow(true)}>Add Product</button>
+                    <input className="control" type="text" onChange={(e)=>handleSearch(e.target.value)} placeholder="Search Product"/>
                 </div>
+                <AddProduct {...props}  show = {show} handleClose={handleClose} />
+                {props.products && search.length === 0 ? <Products products={props.products} />:<Search products={props.products} query={search} />}                
             </div>
         </>
     )

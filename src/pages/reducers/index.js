@@ -1,5 +1,5 @@
 const iState = {
-    products:[{name: "am", description: "am", price: "1", qty: "1", image: "mm"}],
+    products:[{name: "am", description: "am", price: "1", qty: "1", image: ""}],
     login:false
 } 
 
