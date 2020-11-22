@@ -34,6 +34,78 @@
   display: none;
 }
 
+.background_green{
+  background-color: #61fb6e;
+  width: 100vw;
+  height: 100vh;
+}
+
+.container{
+  margin-left: 6vw;
+  margin-right: 6vw;
+}
+
+.login{
+  position: fixed;
+  top:30%;
+  left: 40%;
+  align-self: center;
+  margin: auto;
+  background-color: white;
+  padding: 8vh;
+  border-radius: 12px;
+  box-shadow: 3px 3px 3px 7px gray;
+}
+
+
+.form{
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+.control{
+  font-size: large;
+  padding: 1vw;
+  background-color: rgb(228, 226, 226);
+  outline: none;
+  border: none;
+  margin-bottom: 2vw;
+}
+
+.button{
+  background-color: #20b82c;
+  padding: 1vw;
+  width: 100%;
+  color: white;
+  font-weight: 800;
+  font-size: medium;
+  outline: none;
+  border: none;
+}
+
+.red{
+  background-color: rgba(211, 18, 18, 0.774);
+  width: fit-content;
+}
+
+.header{
+  width: 98vw;
+  height: fit-content;
+  padding: 1vw;
+  background-color: black;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  color: white;
+}
+
+.label{
+  margin-right: 2vw;
+  font-size: medium;
+  font-weight: 900;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

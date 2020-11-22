@@ -13,10 +13,15 @@ export default function Login(props){
     }
 
     return(
-        <div>
-            <input type="email" value={user_email} placeholder="Email" onChange={e=>handleEmail(e.target.value)}/>
-            <input type="text" value={user_name} placeholder="Name" onChange={e=>handleName(e.target.value)}/>
-            <button onClick={()=>props.login_user({name:user_name, email:user_email})}>Login</button>
+        <div className="background_green">
+            <div className="login">
+                <div className="form">
+                    <input type="email" className="control" value={user_email} placeholder="Email" onChange={e=>handleEmail(e.target.value)}/>
+                    <input type="text"  className="control" value={user_name} placeholder="Name" onChange={e=>handleName(e.target.value)}/>
+                    <button onClick={()=>props.login_user({name:user_name, email:user_email})} className="button">Login</button>
+                </div>   
+            </div>
         </div>
+        
     )
 }

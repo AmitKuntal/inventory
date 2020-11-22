@@ -18,13 +18,16 @@ export default function Dashboard(props){
         setSearch(query)
     }
 
-    return(
-        <div>
+    return(<>
             <Header name={props.user.name} logout={props.logout} />
-            <AddProduct {...props}  show = {show} handleClose={handleClose} />
-            <button onClick={(e)=>setShow(true)}>Add Product</button>
-            <input type="text" onChange={(e)=>handleSearch(e.target.value)} placeholder="Search Product"/>
-            {props.products && search.length === 0 ? <Products products={props.products} />:<Search products={props.products} query={search} />}
-        </div>
+            <div className="container">
+                <div className="control_box">
+                    <button onClick={(e)=>setShow(true)}>Add Product</button>
+                    <input type="text" onChange={(e)=>handleSearch(e.target.value)} placeholder="Search Product"/>
+                    <AddProduct {...props}  show = {show} handleClose={handleClose} />
+                    {props.products && search.length === 0 ? <Products products={props.products} />:<Search products={props.products} query={search} />}
+                </div>
+            </div>
+        </>
     )
 }
